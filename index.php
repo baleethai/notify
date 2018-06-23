@@ -9,10 +9,10 @@ if (isset($_GET['channel']) && !empty($_GET['channel'])) {
     $channel = $_GET['channel'];
     switch ($channel) {
         case 'hooks':
-            $message = 'Deploy Success. | ' . $channel;
+            $message = 'Deploy Success. ' . $channel;
             break;
         default:
-            $message = 'Deploy Success. | ' . $channel;
+            $message = 'Deploy Success. ' . $channel;
             break;
     }
 
