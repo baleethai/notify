@@ -1,0 +1,11 @@
+{
+    "name": "tum/notify",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Thinnakorn",
+            "email": "baleethai@gmail.com"
+        }
+    ],
+    "require": {}
+}
