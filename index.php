@@ -6,12 +6,13 @@ $dotenv->load();
 
 if (isset($_GET['channel']) && !empty($_GET['channel'])) {
     $message = '';
-    switch ($_GET['channel']) {
+    $channel = $_GET['channel'];
+    switch ($channel) {
         case 'hooks':
-            $message = 'Deploy success. hooks.leovel.com';
+            $message = 'Deploy Success.' . $channel;
             break;
         default:
-            $message = 'leovel.com deploy!';
+            $message = 'Deploy Success.' . $channel;
             break;
     }
 
