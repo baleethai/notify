@@ -20,3 +20,4 @@ if (isset($_GET['channel']) && !empty($_GET['channel'])) {
     $line->send($message);
 }
 
+echo 'notify whoo';
