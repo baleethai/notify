@@ -1,13 +1,9 @@
 <?php
 
-echo 'notify whoo';
-
 require 'vendor/autoload.php';
 
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
-
-$token = $_GET['token'];
 
 // url.com?channel=hook&token=xxx
 if (isset($_GET['channel']) && !empty($_GET['channel'])) {
@@ -22,7 +18,7 @@ if (isset($_GET['channel']) && !empty($_GET['channel'])) {
             break;
     }
 
-    $line = new KS\Line\LineNotify(getenv('TOKEN', $token));
+    $line = new KS\Line\LineNotify(getenv('TOKEN'));
     $line->send($message);
 }
 
