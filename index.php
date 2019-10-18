@@ -11,10 +11,10 @@ if (isset($_GET['channel']) && !empty($_GET['channel'])) {
     $channel = $_GET['channel'];
     switch ($channel) {
         case 'hooks':
-            $message = 'Success ' . $channel;
+            $message = $channel;
             break;
         default:
-            $message = 'Success ' . $channel;
+            $message = $channel;
             break;
     }
 
@@ -22,4 +22,4 @@ if (isset($_GET['channel']) && !empty($_GET['channel'])) {
     $line->send($message);
 }
 
-echo 'notify whoo';
+echo 'notify';
