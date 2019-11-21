@@ -8,7 +8,6 @@
         }
     ],
     "require": {
-        "kittinan/php-line-notify": "^0.5.0",
-        "vlucas/phpdotenv": "^2.4"
+        "kittinan/php-line-notify": "^0.5.0"
     }
 }
